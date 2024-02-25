@@ -1,0 +1,268 @@
+.container-fluid{
+  background: rgba(0, 0, 0, 0.670);
+
+}
+.container {
+  max-width: 1140px;
+  /* border: 1px solid red; */
+}
+
+
+.top {
+  min-height: 80px;
+  background: black;
+  margin: 0px auto;
+  /* border: 1px solid red; */
+}
+
+
+.top .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .top .logo {
+  text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+} */
+/* .top nav{
+  border: 1px solid red;
+  
+} */
+.top nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+margin-bottom: 0px;
+}
+
+.top nav ul a {
+  color: rgb(21, 182, 21);
+  text-decoration: none;
+  padding: 0 12px;
+  font-size: 1.2em;
+  /* text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;*/
+  display: inline-block;
+  transition: 1000ms;
+ 
+}
+
+
+.top nav ul a:hover {
+  color: rgb(47, 255, 47);
+  transform: scale(1.2, 1.2);
+}
+
+.top nav ul a::after{
+  /* בדרך כלל הקונטנט/תוכן יהיה גרשיים ריקות */
+  content: "";
+  background:   rgb(47, 255, 47);
+  /* שלא יוצא בהתחלה */
+  width:0%;
+  display: block;
+  /* העובי של הפס */
+  height: 4px;
+  /* זמן אננימציה */
+  transition: 1000ms;
+  /* יגרום לאנימציה להתחיל מ אמצע */
+  margin:0 auto;
+}
+
+.top nav ul li a:hover::after{
+  /* הופך את הרוחב ל100 אחוז של הפס */
+  width:100%;
+}
+.top nav ul a::before{
+  /* בדרך כלל הקונטנט/תוכן יהיה גרשיים ריקות */
+  content: "";
+  background:   rgb(47, 255, 47);
+  /* שלא יוצא בהתחלה */
+  width:0%;
+  display: block;
+  /* העובי של הפס */
+  height: 4px;
+  /* זמן אננימציה */
+  transition: 1000ms;
+  /* יגרום לאנימציה להתחיל מ אמצע */
+  margin:0 auto;
+}
+.top nav ul li a:hover::before{
+  /* הופך את הרוחב ל100 אחוז של הפס */
+  width:100%;
+}
+header .burger {
+  color:  rgb(21, 182, 21);
+  cursor: pointer;
+  display: none;
+}
+
+.strip .bg_slide {
+  min-height: 600px;
+  background: grey;
+  background-position: center;
+  background-size: cover;
+  
+
+}
+
+.strip .carousel-caption{
+  background: rgba(0, 0, 0, 0.650);
+  max-width: 25%;
+  align-items: center;
+  margin: 0px auto;
+  border-radius: 16px;
+  font-size: 1.6em;
+  color: white;
+  
+}
+.strip .carousel-caption h5 {
+  color:  white;
+  font-size: 1.2em;
+}
+.strip .carousel-caption p {
+  color:  white;
+}
+main {
+  margin: 0px auto;
+  font-family: 'Open Sans', sans-serif;
+   
+  }
+.banner{
+  min-height: 100vh;
+  background-image: url(images/Oren\ Cohen\ photo\ \ 24.jpg);
+  background-size: cover;
+  background-position:  center;
+}
+
+main p{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  /* border: 2px solid white; */
+  background: rgba(0, 0, 0, 0.650);
+  padding: 8px;
+  border-radius: 16px; 
+}
+
+/* .links .img{
+  border-radius: 24px;
+} */
+h1{
+  background: rgba(0, 0, 0, 0.650);
+  padding: 8px;
+  border-radius: 16px;
+}
+.btn{
+  border: none;
+  background: rgb(21, 182, 21);
+}
+.btn :hover{
+  background: rgb(47, 255, 47);
+}
+#more{
+display: none;}
+
+footer {
+  min-height: 80px;
+  background : black !important;
+}
+
+footer .written {
+  text-align: center;
+  padding-top: 16px;
+}
+
+footer .rights {
+  color: rgb(21, 182, 21);
+  font-size: 1.6em;
+
+
+}
+
+footer .rights p a {
+  text-decoration: none;
+  color: rgb(21, 182, 21);
+}
+
+footer .rights p a:hover {
+  color: rgb(47, 255, 47);
+}
+
+footer .icons ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer .icons ul li {
+  display: inline-block;
+  padding: 0 8px;
+}
+
+footer .icons ul li a {
+  color: rgb(21, 182, 21);
+  text-decoration: none;
+  font-size: 2em;
+}
+
+footer .icons ul li a:hover {
+  color: rgb(47, 255, 47);
+}
+
+
+@media (max-width:768px){
+
+  header nav {
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.808);
+    top: 80px;
+    right: 0;
+    max-width: 200px;
+    width: 100%;
+    text-align: center;
+   
+  
+  }
+
+  .top header nav ul {
+    display: block;
+
+  }
+
+  header nav li {
+    padding: 12px;
+    border: 1px solid rgb(71, 71, 71);
+  }
+  header nav .psalm{
+    display: none;
+  }
+  header nav ul a {
+    color: rgb(21, 182, 21);
+  }
+
+  header .burger {
+    display: block;
+    font-size: 2em;
+    padding: 8px;
+  
+  }
+.border1{
+  margin-bottom: 8px;
+}
+
+  /* .strip{
+    
+    min-height: 100vh;
+    background-image: url(images/2.jpg);
+    background-position: top center;
+    background-size: cover; 
+  } */
+ .strip .carousel{
+  display: none;
+ }
+
+ main .box{
+  width: unset;
+ }
+}

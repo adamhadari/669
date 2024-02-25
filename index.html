@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>669</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300;1,400;1,700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="sliders.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script defer src="java/readmore.js"></script>
+    <script defer src="java/burger.js"></script>
+
+</head>
+
+<body>
+    <div class="top container-fluid sticky-top">
+        <header class="container pt-2">
+            <div class="logo col-9 col-sm-auto col-md-5 col-lg-3">
+
+                <!-- img-fluid -> תמונה ברוחב 100 אחוז של האבא שלה עד הרוחב המרבי שלה בפיקסלים -->
+                <a href="index.html"><img src="images/logo.png" alt="logo" class="img-fluid" width="70"></a>
+                
+
+            </div>
+            <nav id="nav_open">
+              
+                <ul>
+                    <li style="color: white; font-style: italic; font-size: small;"  class="psalm text-center pe-5 pb-0 pt-0">"Call upon me in times of trouble, I will be there for you and rescue you" Psalms 81,8</li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="gallery.html">Media</a></li>
+                    <li><a href="trivia.html">Trivia</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+            </nav>
+            <div class="burger" id="burger_btn">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+        </header>
+    </div>
+    <div class="strip container-fluid p-0">
+
+        <!-- להכניס את הסליידר/ קרוסלה שלנו -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="bg_slide" style="background-image: url(images/4.jpg);"></div>
+                    <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                    <div class="carousel-caption d-none d-md-block">
+                        
+                            <h5>At any situation</h5>
+                            <p>Ready to risk thier lives for the sake of others</p>
+                          
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="bg_slide" style="background-image: url(images/Oren\ Cohen\ photo\ \ 18.jpg);"></div>
+                    <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Reaching anywhere</h5>
+                        <p>There is no limit to where they will go</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="bg_slide" style="background-image: url(images/Oren\ Cohen\ photo\ \ 16.jpg);"></div>
+                    <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>At any weather</h5>
+                        <p>they stop at nothing</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="bg_slide" style="background-image: url(images/Oren\ Cohen\ photo\ \ 8.jpg);"></div>
+                    <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Being part of the greater good</h5>
+                        <p>Saving lives</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </div>
+    <main class="container-fluid py-5 banner">
+        <div class="container">
+            <div class="col-12 row mx-auto">
+                <div class=" border1 col-12 col-md-7 p-0">
+                    <div data-aos="zoom-in-down" data-aos-duration="3000"> <img class="border"
+                            src="images/Oren Cohen photo  24.jpg" alt="rescue" width="100%"
+                            style="border-radius: 24px;">
+                        <!-- תוסיפו קרוסלה עם 4 תמונות כאן -->
+                        <!-- <iframe width="100%" height="315" src="https://www.youtube.com/embed/VIsiE328ZLE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                    </div>
+                </div>
+                <div class="text-white col-md-4  ">
+                    <h1>Unit 669- History in the making</h1>
+                    <p class=" mb-2">
+                        Unit 669 was founded in 1974, in the aftermath of the 1973 Yom Kippur War, when an ad hoc
+                        medevac
+                        unit made some 5000 extractions. Its initial mandate was to extract and provide initial medical
+                        treatment to downed (and possibly injured) pilots beyond lines. However, in later years the unit
+                        also participated in extraction of soldiers of other arms of the Israeli Defense Forces,
+                        especially Sayeret (Special Forces) fighters in operations beyond enemy lines and seamen in
+                        distress. <span id="dots">...</span><span id="more">The unit's number was chosen to perpetuate the acts of British humanitarian, Sir
+                        Nicholas Winton. Winton was a German born Jew who rescued 669 children, most of them Jewish,
+                        from Nazi occupied Czechoslovakia on the eve of World War II. While Winton's actions were only
+                        revealed to the public decades after the war, the IDF saw fit to grant him this anonymous
+                        gesture.</span>
+                    </p>
+                    <button class="btn text-white " style="background: rgb(21, 182, 21); background:hover rgb(47, 255, 47);" onclick="myFunction()" id="myBtn">Read more
+                    </button>
+                </div>
+            </div>
+            <!-- end para + pic -->
+
+            <div class=" links row mx-auto col-12 pt-5">
+                <div class="col-12 pt-4 col-md-4" data-aos="flip-left" data-aos-duration="2000">
+                    <h4 class="position-absolute top-1 " style="left: 20px;">669 history</h4>
+                    <article class="d-flex align-items-center justify-content-center">
+                        <a href="https://en.wikipedia.org/wiki/Unit_669#History" target="_blank"><img
+                                src="images/Oren Cohen photo  16.jpg" alt="helicopter" width="100%"
+                                style="border-radius: 24px;"> </a>
+                    </article>
+                </div>
+                <!-- end box -->
+                <!-- end row -->
+
+                <div class="col-12 pt-4 col-md-4 col-md-pt-0" data-aos="flip-left" data-aos-duration="2000">
+                    <h4 class="position-absolute top-1 " style="left: 20px; color: white;">In the news</h4>
+                    <article class="d-flex align-items-center justify-content-center">
+                        <a href="https://www.jpost.com/Israel-News/Israel-Air-Force-elite-669-unit-hosts-largest-international-rescue-drill-572335"
+                            target="_blank"><img src="images/WhatsApp Image 2020-11-12 at 16.18.02.jpeg" alt="helicopter" width="100%"
+                                style="border-radius: 24px;"> </a>
+                    </article>
+                </div>
+
+                <!-- end box -->
+                <!-- end row -->
+
+                <div class="col-12 pt-4 col-md-4 col-4 pt-0" data-aos="flip-left" data-aos-duration="2000">
+                    <h4 class="position-absolute top-1 " style="left: 20px;">Reports</h4>
+                    <article class="d-flex align-items-center justify-content-center">
+                        <a href="https://www.idf.il/en/mini-sites/idf-units/unit-669/unit-669/" target="_blank"><img
+                                src="images/WhatsApp Image 2020-11-12 at 16.18.04.jpeg" width="100%" alt="helicopter" target=" _blanc"
+                                style="border-radius: 24px;"></a>
+                    </article>
+                </div>
+
+                <!-- end box -->
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer class="container-fluid">
+        <div class="container">
+            <div class="col-12 written  justify-content-between align-items-center d-flex flex-wrap mx-auto ">
+                <div class="d-flex rights col-12 col-md-6 justify-content-center justify-content-md-start">
+
+                    <!-- img-fluid -> תמונה ברוחב 100 אחוז של האבא שלה עד הרוחב המרבי שלה בפיקסלים -->
+                    <p class="m-0 d-inline-flex" style="font-size: large;"><a href="https://wa.me/972506686863" target="_blank"><i
+                                class="fa fa-copyright" aria-hidden="true"></i> Adam Hadari Designs</a></p>
+                </div>
+                <div class=" icons col-12 col-md-6 row justify-content-center  justify-content-md-end text-center">
+                    <ul class="col-auto">
+                        <li><a href="https://www.facebook.com/AFU669/" target="_blank"><i class="fa fa-facebook-square"
+                                    aria-hidden="true"></i></a></li>
+                        <li><a href="https://mobile.twitter.com/unit669" target="_blank"><i class="fa fa-twitter-square"
+                                    aria-hidden="true"></i></a></li>
+                        <li><a href="https://youtu.be/Oaif7_0CPn8" target="_blank"><i class="fa fa-youtube-square"
+                                    aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.instagram.com/israeliairforce/" target="_blank"><i
+                                    class="fa fa-instagram" aria-hidden="true"></i></a></li>
+
+
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

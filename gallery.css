@@ -1,0 +1,302 @@
+.container-fluid{
+  background: rgba(0, 0, 0, 0.670);
+
+}
+.container {
+  max-width: 1140px;
+  /* border: 1px solid red; */
+}
+
+
+.top {
+  min-height: 80px;
+  background: black;
+  margin: 0px auto;
+  /* border: 1px solid red; */
+}
+
+
+.top .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .top .logo {
+  text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+} */
+/* .top nav{
+  border: 1px solid red;
+  
+} */
+.top nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin-bottom: 0px;
+}
+
+.top nav ul a {
+  color: rgb(21, 182, 21);
+  text-decoration: none;
+  padding: 0 12px;
+  font-size: 1.2em;
+  /* text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;*/
+  display: inline-block;
+  transition: 1000ms;
+ 
+}
+
+
+.top nav ul a:hover {
+  color: rgb(47, 255, 47);
+  transform: scale(1.2, 1.2);
+}
+
+.top nav ul a::after{
+  /* בדרך כלל הקונטנט/תוכן יהיה גרשיים ריקות */
+  content: "";
+  background:   rgb(47, 255, 47);
+  /* שלא יוצא בהתחלה */
+  width:0%;
+  display: block;
+  /* העובי של הפס */
+  height: 4px;
+  /* זמן אננימציה */
+  transition: 1000ms;
+  /* יגרום לאנימציה להתחיל מ אמצע */
+  margin:0 auto;
+}
+.top nav ul li a:hover::after{
+  /* הופך את הרוחב ל100 אחוז של הפס */
+  width:100%;
+}
+.top nav ul a::before{
+  /* בדרך כלל הקונטנט/תוכן יהיה גרשיים ריקות */
+  content: "";
+  background:   rgb(47, 255, 47);
+  /* שלא יוצא בהתחלה */
+  width:0%;
+  display: block;
+  /* העובי של הפס */
+  height: 4px;
+  /* זמן אננימציה */
+  transition: 1000ms;
+  /* יגרום לאנימציה להתחיל מ אמצע */
+  margin:0 auto;
+}
+.top nav ul li a:hover::before{
+  /* הופך את הרוחב ל100 אחוז של הפס */
+  width:100%;
+}
+header .burger {
+  color:  rgb(21, 182, 21);
+  cursor: pointer;
+  display: none;
+}
+
+
+main h1 {
+  font-size: 4em;
+  text-align: center;
+  margin-top: 16px;
+  color: rgb(47, 255, 47);
+}
+
+main img {
+  padding-bottom: 12px;
+}
+
+.light_box {
+  /* גורם לדיב לעקוב אחרינו */
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* רוחב וגובה בדיוק של החלון */
+  width: 100%;
+  height: 100%;
+  /* רקע שחור שקוף */
+  background: rgba(0, 0, 0, 0.705);
+  /* שתמיג יהיה הכי קדימה */
+  z-index: 999;
+  /* כדי לגרום לבוקס הפנימי להיות ממוקם באמצע */
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  display: none;
+  box-sizing: border-box;
+}
+
+/* .inside_box - הריבוע הלבן שהתמונה ,טקסט וכפתור
+  נמצאים בו */
+.light_box .inside_box {
+  background: white;
+  padding: 8px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 30px;
+}
+
+.light_box .inside_box img {
+  max-width: 600px;
+  width: 98%;
+  box-sizing: border-box;
+  border-radius: 30px;
+}
+
+.light_box .inside_box p {
+  color: grey;
+  font-size: 2em;
+  
+}
+
+
+.light_box .inside_box {
+  position: relative;
+}
+
+.light_box .inside_box button {
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+
+}
+
+.light_box .inside_box button :hover {
+  color: rgb(47, 255, 47);
+}
+
+.container-fluid .vid {
+  min-height: 600px;
+  background: rgba(0, 0, 0, 0.670);
+
+}
+
+.container-fluid .vid .container {
+  max-width: 600px;
+  min-height: inherit;
+  margin: 0px auto;
+}
+
+.container-fluid .videos .box {
+  padding-bottom: 12px;
+
+  min-height: 400px;
+  margin: 0px auto;
+
+}
+
+.tag {
+  font-size: 4.2em;
+  color: rgb(47, 255, 47);
+
+}
+
+.line1 {
+  max-width: 80%;
+  border: 2px solid white;
+  border-radius: 12px;
+  background: white;
+}
+
+.line2 {
+  max-width: 80%;
+  border: 2px solid white;
+  border-radius: 12px;
+  background: white;
+}
+.container-fluid {
+  max-width: 100%;
+  background : black ;
+
+}
+footer {
+  min-height: 80px;
+  background : black !important;
+}
+
+footer .written {
+  text-align: center;
+  padding-top: 16px;
+}
+
+footer .rights {
+  color: rgb(21, 182, 21);
+  font-size: 1.6em;
+
+
+}
+
+footer .rights p a {
+  text-decoration: none;
+  color: rgb(21, 182, 21);
+}
+
+footer .rights p a:hover {
+  color: rgb(47, 255, 47);
+}
+
+footer .icons ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer .icons ul li {
+  display: inline-block;
+  padding: 0 8px;
+}
+
+footer .icons ul li a {
+  color: rgb(21, 182, 21);
+  text-decoration: none;
+  font-size: 2em;
+}
+
+footer .icons ul li a:hover {
+  color: rgb(47, 255, 47);
+}
+
+
+
+@media (max-width:768px){
+
+  header nav {
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.808);
+    top: 80px;
+    right: 0;
+    max-width: 200px;
+    width: 100%;
+    text-align: center;
+   
+  
+  }
+
+  .top header nav ul {
+    display: block;
+
+  }
+
+  header nav li {
+    padding: 12px;
+    border: 1px solid rgb(71, 71, 71);
+  }
+  header nav .psalm{
+    display: none;
+  }
+  header nav ul a {
+    color: rgb(21, 182, 21);
+  }
+
+  header .burger {
+    display: block;
+    font-size: 2em;
+    padding: 8px;
+  }
+}

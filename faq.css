@@ -1,0 +1,257 @@
+.container-fluid{
+  background: rgba(0, 0, 0, 0.670);
+
+}
+.container {
+  max-width: 1140px;
+}
+
+
+.top {
+  min-height: 80px;
+  background: black;
+  margin: 0px auto;
+}
+
+
+.top .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top .logo {
+  text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+}
+
+.top nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin-bottom: 0px;
+}
+
+.top nav ul a {
+  color: rgb(21, 182, 21);
+  text-decoration: none;
+  padding: 0 12px;
+  font-size: 1.2em;
+  /* text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;*/
+  display: inline-block;
+  transition: 1000ms;
+}
+
+
+.top nav ul a:hover {
+  color: rgb(47, 255, 47);
+  transform: scale(1.2, 1.2);
+}
+
+.top nav ul a::after{
+  /* בדרך כלל הקונטנט/תוכן יהיה גרשיים ריקות */
+  content: "";
+  background:   rgb(47, 255, 47);
+  /* שלא יוצא בהתחלה */
+  width:0%;
+  display: block;
+  /* העובי של הפס */
+  height: 4px;
+  /* זמן אננימציה */
+  transition: 1000ms;
+  /* יגרום לאנימציה להתחיל מ אמצע */
+  margin:0 auto;
+}
+.top nav ul li a:hover::after{
+  /* הופך את הרוחב ל100 אחוז של הפס */
+  width:100%;
+}
+.top nav ul a::before{
+  /* בדרך כלל הקונטנט/תוכן יהיה גרשיים ריקות */
+  content: "";
+  background:   rgb(47, 255, 47);
+  /* שלא יוצא בהתחלה */
+  width:0%;
+  display: block;
+  /* העובי של הפס */
+  height: 4px;
+  /* זמן אננימציה */
+  transition: 1000ms;
+  /* יגרום לאנימציה להתחיל מ אמצע */
+  margin:0 auto;
+}
+.top nav ul li a:hover::before{
+  /* הופך את הרוחב ל100 אחוז של הפס */
+  width:100%;
+}
+header .burger {
+  color: rgb(21, 182, 21) ;
+  cursor: pointer;
+  display: none;
+}
+
+.container-fluid.back{
+  min-height: 100vh;
+  background-image: url(images/Oren\ Cohen\ photo\ \ 5.jpg);
+  background-size: 100%;
+  background-position:  center;
+}
+.blackbox{
+  background: rgba(0, 0, 0, 0.650);
+  border-radius: 24px;
+}
+
+.accordion-item {
+  background: none;
+  color: white;
+  border: none;
+  font-size: 1.2em;
+  border-radius: 16px;
+  /* margin: 8px; */
+}
+/* במצב פתוח */
+.accordion-header .accordion-button{
+  background:rgb(47, 255, 47) ;
+  border:none;
+  outline: none;
+  color:black;
+  border-radius: 16px;
+  /* background-size: 100%; */
+  /* margin: 16px;/ */
+} 
+
+/* במצב סגור */
+.accordion-header .collapsed{
+  background:  rgb(21, 182, 21);
+  border-radius: 16px;
+  
+}
+
+/* מבטל את הבורדר תכלת בברירת מחדל */
+.accordion-button:focus {
+  box-shadow: none;
+  
+}
+#myBtn {
+  /* display: none; Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 200px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgb(21, 182, 21); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: rgb(47, 255, 47); /* Add a dark-grey background on hover */
+}
+
+
+footer {
+  min-height: 80px;
+  background : black !important;
+}
+
+footer .written {
+  text-align: center;
+  padding-top: 16px;
+}
+
+footer .rights {
+  color: rgb(21, 182, 21);
+  font-size: 1.6em;
+
+
+}
+
+footer .rights p a {
+  text-decoration: none;
+  color: rgb(21, 182, 21);
+}
+
+footer .rights p a:hover {
+  color: rgb(47, 255, 47);
+}
+
+footer .icons ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer .icons ul li {
+  display: inline-block;
+  padding: 0 8px;
+}
+
+footer .icons ul li a {
+  color: rgb(21, 182, 21);
+  text-decoration: none;
+  font-size: 2em;
+}
+
+footer .icons ul li a:hover {
+  color: rgb(47, 255, 47);
+}
+
+@media (max-width:768px){
+
+  header nav {
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.808);
+    top: 80px;
+    right: 0;
+    max-width: 200px;
+    width: 100%;
+    text-align: center;
+   z-index: 999;
+  }
+
+  .top header nav ul {
+    display: block;
+
+  }
+  header nav .psalm{
+    display: none;
+  }
+  header nav li {
+    padding: 12px;
+    border: 1px solid rgb(71, 71, 71);
+  }
+
+  header nav ul a {
+    color: rgb(21, 182, 21);
+  }
+
+  header .burger {
+    display: block;
+    font-size: 2em;
+    padding: 8px;
+  }
+  #myBtn {
+    /* display: none; Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 110px; /* Place the button at the bottom of the page */
+    right: 15px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: 1px solid rgba(0, 0, 0, 0.650); /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgb(21, 182, 21); /* Set a background color */
+    color: black; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 8px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 15px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: rgb(47, 255, 47); /* Add a dark-grey background on hover */
+  }
+  
+}
